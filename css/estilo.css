@@ -1,0 +1,265 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+  margin: 0;
+  font-family: 'Verdana', sans-serif;
+  background: url("img/fondo2.jpg") repeat;
+  background-size: 250px; /* podés ajustar si se ve muy grande o pequeño */
+  color: green;
+}
+
+#main {
+  max-width: 1200px;
+  margin: auto;
+  background-color: #A3CB38;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#header {
+  text-align: center;
+  background-color: white;
+  padding: 1rem;
+}
+
+#header img {
+  max-width: 200px;
+}
+
+#nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  background-color: #A3CB38;
+  list-style: none;
+}
+
+#nav li {
+  flex: 1;
+}
+
+#nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3 ease;
+  font-size: 1.1rem;
+text-transform: uppercase;
+letter-spacing: 1px;
+
+}
+
+
+#nav li a:hover,
+#nav li a.active {
+  background-color: #A3CB38;
+}
+
+#section {
+  padding: 2rem;
+  background-color: white;
+  text-align: left;
+}
+
+
+
+#izquierda, #derecha {
+  flex: 1 1 300px;
+  padding: 1rem;
+
+}
+
+
+#izquierda p {
+  font-size: 1.4rem;
+  color: black;
+  font-weight: 600;
+}
+
+#derecha p {
+  font-size: 1.1rem;
+  color: black;
+  line-height: 1.6;
+}
+
+#tercera {
+  flex: 1 1 300px;
+  padding: 1rem;
+}
+
+
+#footer {
+  text-align: left;
+  padding: 1.5rem;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  color: #009432;
+}
+
+#footer img {
+  text-align: right;
+  width: 80px;
+  opacity: 100;
+
+}
+
+.footer-right p {
+  font-size: 0.9rem;
+  color: #009432;
+}
+
+.titulo-verde {
+color: #009432;
+font-weight: 600;
+}
+
+.texto-negro {
+  color: black;
+}
+
+.intro {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem;
+  color: white;
+}
+
+
+
+.column-text {
+  font-size: 1.1rem;
+  color: black;
+  line-height: 1.6;
+}
+
+
+
+
+.footer-text {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
+.logo {
+  width: 150px; 
+  margin: 20px auto;
+  display: block;
+}
+
+.barra-verde-oscura {
+  background-color: #6aaf3b; /* verde más oscuro */
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.barra-verde-clara {
+  background-color: #a6ce39; /* el verde que ya tenías */
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.barra-verde-oscura a {
+  color: white !important;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.barra-verde-oscura a:hover {
+  text-decoration: underline;
+  color: #eaffea;
+}
+
+
+
+
+.column-text ul {
+  list-style-position: inside;
+}
+
+#section.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: white;
+  text-align: left;
+}
+
+/* Por defecto: aplica a todas si no se indica otra cosa */
+#section {
+  padding: 2rem;
+  background-color: white;
+}
+
+/* Solo para las páginas de contenido simple */
+#section.contenido-simple {
+  text-align: left;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Solo para index.html */
+#section.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: white;
+  text-align: left;
+}
+.imagen-inicio {
+  width: 100%;
+  max-height: 300px; /* antes era 400px */
+  object-fit: cover;
+  display: block;
+}
+.imagen-inicio {
+  width: 100%;
+  max-height: 300px; /* antes era 400px */
+  object-fit: cover;
+  display: block;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin: 3rem auto 2rem auto; /* arriba - derecha - abajo - izquierda */
+  padding-top: 1rem;
+  border-top: 2px solid #d0e8b3; /* línea opcional que separa */
+  max-width: 90%;
+}
+
+
+.galeria img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
